@@ -62,6 +62,58 @@ Using the Elbow Method, **K = 3** was selected as the optimal number of clusters
 
 ---
 
+## How to Use This Project
+
+Follow the steps below to run the project locally.
+
+### 1. Clone the Repository
+
+
+```bash
+git clone https://github.com/VashishthSoni/Unsupervised-Employee-Segmentation.git
+cd Unsupervised-Employee-Segmentation
+```
+
+### 2️. Create a Virtual Environment (Recommended)
+
+```bash
+python -m venv venv
+```
+
+Activate it:
+
+**Windows**
+```bash
+venv\Scripts\activate
+```
+
+**macOS / Linux**
+```bash
+source venv/bin/activate
+```
+
+### 3️. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4️. Run the Clustering Script
+
+```bash
+python src/employee_clustering.py
+```
+
+### 5️. View Outputs
+
+After execution, the following files will be generated:
+
+- outputs/elbow_plot.png – Elbow Method visualization
+- outputs/cluster_plot.png – PCA-based cluster visualization
+- outputs/clustered_employees.csv – Dataset with assigned cluster labels
+
+---
+
 ## Key Takeaways
 - PCA helps reveal true data structure by removing redundancy
 - K-Means effectively groups employees based on work patterns
